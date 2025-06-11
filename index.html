@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Basic JS </title>
+  <style>
+    .container {
+      padding: 16px;
+    }
+
+    button {
+      padding: 4px 16px;
+    }
+
+    input {
+      padding: 4px 8px;
+      margin-bottom: 16px;
+    }
+
+    .todo-list {
+      display: flex;
+      flex-direction:  column;
+      gap: 16px;
+      padding: 0 16px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <input
+      id="todo-input"
+      type="text">
+    <button onclick="addTodo()">
+      Add
+    </button>
+  </div>
+  <div
+    id="list"
+    class="todo-list">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
